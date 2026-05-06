@@ -1,4 +1,4 @@
-# 🌊 AquaGuard AI — Waterborne Disease Monitoring & Outbreak Prediction
+# 🌊 AquaCare — Waterborne Disease Monitoring & Outbreak Prediction
 
 > AI-powered system for water quality monitoring, contamination detection, and disease outbreak prediction using Computer Vision (YOLOv8) and Machine Learning.
 
@@ -307,4 +307,3 @@ This project is developed for academic purposes (B.Tech Final Year Project).
 
 ---
 
-Built with ❤️ using AI-powered water quality analysis
