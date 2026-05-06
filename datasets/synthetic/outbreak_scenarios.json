@@ -1,0 +1,403 @@
+[
+  {
+    "name": "Cholera Outbreak - Majuli",
+    "description": "Sudden spike of cholera cases following flood contamination",
+    "timeline": [
+      {
+        "day": 1,
+        "date": "2026-04-10",
+        "new_cases": 2,
+        "risk_level": "LOW",
+        "water_contamination_ppm": 26,
+        "bacteria_count": 400
+      },
+      {
+        "day": 2,
+        "date": "2026-04-11",
+        "new_cases": 2,
+        "risk_level": "LOW",
+        "water_contamination_ppm": 26,
+        "bacteria_count": 400
+      },
+      {
+        "day": 3,
+        "date": "2026-04-12",
+        "new_cases": 2,
+        "risk_level": "LOW",
+        "water_contamination_ppm": 26,
+        "bacteria_count": 400
+      },
+      {
+        "day": 4,
+        "date": "2026-04-13",
+        "new_cases": 5,
+        "risk_level": "LOW",
+        "water_contamination_ppm": 35,
+        "bacteria_count": 700
+      },
+      {
+        "day": 5,
+        "date": "2026-04-14",
+        "new_cases": 10,
+        "risk_level": "MEDIUM",
+        "water_contamination_ppm": 50,
+        "bacteria_count": 1200
+      },
+      {
+        "day": 6,
+        "date": "2026-04-15",
+        "new_cases": 15,
+        "risk_level": "HIGH",
+        "water_contamination_ppm": 65,
+        "bacteria_count": 1700
+      },
+      {
+        "day": 7,
+        "date": "2026-04-16",
+        "new_cases": 20,
+        "risk_level": "HIGH",
+        "water_contamination_ppm": 80,
+        "bacteria_count": 2200
+      },
+      {
+        "day": 8,
+        "date": "2026-04-17",
+        "new_cases": 35,
+        "risk_level": "HIGH",
+        "water_contamination_ppm": 125,
+        "bacteria_count": 3700
+      },
+      {
+        "day": 9,
+        "date": "2026-04-18",
+        "new_cases": 30,
+        "risk_level": "HIGH",
+        "water_contamination_ppm": 110,
+        "bacteria_count": 3200
+      },
+      {
+        "day": 10,
+        "date": "2026-04-19",
+        "new_cases": 25,
+        "risk_level": "HIGH",
+        "water_contamination_ppm": 95,
+        "bacteria_count": 2700
+      },
+      {
+        "day": 11,
+        "date": "2026-04-20",
+        "new_cases": 20,
+        "risk_level": "HIGH",
+        "water_contamination_ppm": 80,
+        "bacteria_count": 2200
+      },
+      {
+        "day": 12,
+        "date": "2026-04-21",
+        "new_cases": 15,
+        "risk_level": "HIGH",
+        "water_contamination_ppm": 65,
+        "bacteria_count": 1700
+      },
+      {
+        "day": 13,
+        "date": "2026-04-22",
+        "new_cases": 10,
+        "risk_level": "MEDIUM",
+        "water_contamination_ppm": 50,
+        "bacteria_count": 1200
+      },
+      {
+        "day": 14,
+        "date": "2026-04-23",
+        "new_cases": 5,
+        "risk_level": "LOW",
+        "water_contamination_ppm": 35,
+        "bacteria_count": 700
+      }
+    ]
+  },
+  {
+    "name": "Sensor Failure During Outbreak - Dhubri",
+    "description": "IoT sensors go offline during critical contamination event",
+    "timeline": [
+      {
+        "day": 1,
+        "sensor_status": "active",
+        "cases": 1,
+        "data_available": true,
+        "risk_level": "MEDIUM"
+      },
+      {
+        "day": 2,
+        "sensor_status": "active",
+        "cases": 1,
+        "data_available": true,
+        "risk_level": "MEDIUM"
+      },
+      {
+        "day": 3,
+        "sensor_status": "active",
+        "cases": 1,
+        "data_available": true,
+        "risk_level": "MEDIUM"
+      },
+      {
+        "day": 4,
+        "sensor_status": "active",
+        "cases": 15,
+        "data_available": true,
+        "risk_level": "MEDIUM"
+      },
+      {
+        "day": 5,
+        "sensor_status": "failed",
+        "cases": 19,
+        "data_available": false,
+        "risk_level": "UNKNOWN"
+      },
+      {
+        "day": 6,
+        "sensor_status": "failed",
+        "cases": 23,
+        "data_available": false,
+        "risk_level": "UNKNOWN"
+      },
+      {
+        "day": 7,
+        "sensor_status": "failed",
+        "cases": 27,
+        "data_available": false,
+        "risk_level": "UNKNOWN"
+      },
+      {
+        "day": 8,
+        "sensor_status": "failed",
+        "cases": 31,
+        "data_available": false,
+        "risk_level": "UNKNOWN"
+      },
+      {
+        "day": 9,
+        "sensor_status": "active",
+        "cases": 35,
+        "data_available": true,
+        "risk_level": "HIGH"
+      },
+      {
+        "day": 10,
+        "sensor_status": "active",
+        "cases": 39,
+        "data_available": true,
+        "risk_level": "HIGH"
+      }
+    ]
+  },
+  {
+    "name": "Multi-Village Contamination Spread",
+    "description": "Contamination spreading downstream through river system",
+    "timeline": [
+      {
+        "day": 1,
+        "affected_villages": [
+          "Majuli"
+        ],
+        "total_cases": 0,
+        "risk_level": "LOW"
+      },
+      {
+        "day": 2,
+        "affected_villages": [
+          "Majuli"
+        ],
+        "total_cases": 3,
+        "risk_level": "LOW"
+      },
+      {
+        "day": 3,
+        "affected_villages": [
+          "Majuli"
+        ],
+        "total_cases": 6,
+        "risk_level": "LOW"
+      },
+      {
+        "day": 4,
+        "affected_villages": [
+          "Majuli"
+        ],
+        "total_cases": 9,
+        "risk_level": "LOW"
+      },
+      {
+        "day": 5,
+        "affected_villages": [
+          "Majuli"
+        ],
+        "total_cases": 12,
+        "risk_level": "LOW"
+      },
+      {
+        "day": 6,
+        "affected_villages": [
+          "Majuli",
+          "Jorhat"
+        ],
+        "total_cases": 20,
+        "risk_level": "MEDIUM"
+      },
+      {
+        "day": 7,
+        "affected_villages": [
+          "Majuli",
+          "Jorhat"
+        ],
+        "total_cases": 23,
+        "risk_level": "MEDIUM"
+      },
+      {
+        "day": 8,
+        "affected_villages": [
+          "Majuli",
+          "Jorhat"
+        ],
+        "total_cases": 26,
+        "risk_level": "MEDIUM"
+      },
+      {
+        "day": 9,
+        "affected_villages": [
+          "Majuli",
+          "Jorhat"
+        ],
+        "total_cases": 29,
+        "risk_level": "MEDIUM"
+      },
+      {
+        "day": 10,
+        "affected_villages": [
+          "Majuli",
+          "Jorhat"
+        ],
+        "total_cases": 32,
+        "risk_level": "MEDIUM"
+      },
+      {
+        "day": 11,
+        "affected_villages": [
+          "Majuli",
+          "Jorhat",
+          "Nagaon"
+        ],
+        "total_cases": 45,
+        "risk_level": "HIGH"
+      },
+      {
+        "day": 12,
+        "affected_villages": [
+          "Majuli",
+          "Jorhat",
+          "Nagaon"
+        ],
+        "total_cases": 48,
+        "risk_level": "HIGH"
+      },
+      {
+        "day": 13,
+        "affected_villages": [
+          "Majuli",
+          "Jorhat",
+          "Nagaon"
+        ],
+        "total_cases": 51,
+        "risk_level": "HIGH"
+      },
+      {
+        "day": 14,
+        "affected_villages": [
+          "Majuli",
+          "Jorhat",
+          "Nagaon"
+        ],
+        "total_cases": 54,
+        "risk_level": "HIGH"
+      },
+      {
+        "day": 15,
+        "affected_villages": [
+          "Majuli",
+          "Jorhat",
+          "Nagaon"
+        ],
+        "total_cases": 57,
+        "risk_level": "HIGH"
+      },
+      {
+        "day": 16,
+        "affected_villages": [
+          "Majuli",
+          "Jorhat",
+          "Nagaon",
+          "Tezpur"
+        ],
+        "total_cases": 75,
+        "risk_level": "HIGH"
+      },
+      {
+        "day": 17,
+        "affected_villages": [
+          "Majuli",
+          "Jorhat",
+          "Nagaon",
+          "Tezpur"
+        ],
+        "total_cases": 78,
+        "risk_level": "HIGH"
+      },
+      {
+        "day": 18,
+        "affected_villages": [
+          "Majuli",
+          "Jorhat",
+          "Nagaon",
+          "Tezpur"
+        ],
+        "total_cases": 81,
+        "risk_level": "HIGH"
+      },
+      {
+        "day": 19,
+        "affected_villages": [
+          "Majuli",
+          "Jorhat",
+          "Nagaon",
+          "Tezpur"
+        ],
+        "total_cases": 84,
+        "risk_level": "HIGH"
+      },
+      {
+        "day": 20,
+        "affected_villages": [
+          "Majuli",
+          "Jorhat",
+          "Nagaon",
+          "Tezpur"
+        ],
+        "total_cases": 87,
+        "risk_level": "HIGH"
+      },
+      {
+        "day": 21,
+        "affected_villages": [
+          "Majuli",
+          "Jorhat",
+          "Nagaon",
+          "Tezpur"
+        ],
+        "total_cases": 90,
+        "risk_level": "HIGH"
+      }
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+# AquaGuard AI - Water Pollution Detection Dataset
+path: D:\waterborne_disease_prediction_model\datasets\water_pollution_real
+train: train/images
+val: valid/images
+
+nc: 9
+names: ['contaminated_water', 'clean_water', 'foam_scum', 'floating_debris', 'oil_spill', 'sewage', 'algae_bloom', 'industrial_waste', 'turbid_water']

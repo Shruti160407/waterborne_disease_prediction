@@ -1,0 +1,10 @@
+# Water Contamination Detection Dataset
+# Auto-generated for YOLOv8 training
+
+path: D:/waterborne_disease_prediction_model/datasets/yolo_data/water_contamination
+train: images/train
+val: images/val
+
+# Classes
+nc: 5
+names: ['contaminated', 'clean', 'industrial_waste', 'sewage', 'chemical_spill']
