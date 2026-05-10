@@ -1,10 +1,73 @@
+# ============================================
+# Python
+# ============================================
 venv/
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ============================================
+# Environment / Secrets — NEVER commit real values
+# ============================================
 .env
 *.env
-*.pkl
+.env.local
+.env.production
+.env.staging
+
+# ============================================
+# ML Model weights & binaries (too large for git)
+# ============================================
+*.pt
 *.joblib
+weights/
+runs/
+models/weights/*.pt
+models/weights/yolo_runs/
+
+# Keep small trained models (< 5MB) — comment out if you want to exclude them too
+!models/weights/outbreak_model.pkl
+!models/weights/feature_scaler.pkl
+!models/weights/model_metadata.json
+
+# ============================================
+# Data files
+# ============================================
 *.csv
 *.sqlite3
+*.db
+datasets/raw/
+data/
+
+# ============================================
+# Node / Frontend
+# ============================================
+frontend/node_modules/
+frontend/build/
+node_modules/
+
+# ============================================
+# OS / IDE
+# ============================================
 .DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# ============================================
+# Logs
+# ============================================
+*.log
+logs/
+
+# ============================================
+# Misc
+# ============================================
 Project_Report.md
+scratch.py

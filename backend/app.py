@@ -59,9 +59,16 @@ def create_app():
     app.config["MAX_CONTENT_LENGTH"] = 16 * 1024 * 1024  # 16MB max upload
     
     # Enable CORS for React frontend
+    # In production, set ALLOWED_ORIGINS env var to comma-separated list of allowed URLs
+    _raw_origins = os.getenv(
+        "ALLOWED_ORIGINS",
+        "http://localhost:3000,http://localhost:5000,http://127.0.0.1:3000"
+    )
+    allowed_origins = [o.strip() for o in _raw_origins.split(",") if o.strip()]
+
     CORS(app, resources={
         r"/*": {
-            "origins": ["http://localhost:3000", "http://localhost:5000", "http://127.0.0.1:3000"],
+            "origins": allowed_origins,
             "methods": ["GET", "POST", "OPTIONS"],
             "allow_headers": ["Content-Type", "Authorization"],
         }

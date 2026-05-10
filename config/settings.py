@@ -190,9 +190,21 @@ TWILIO_CONFIG = {
 FLASK_CONFIG = {
     "host": os.getenv("FLASK_HOST", "0.0.0.0"),
     "port": int(os.getenv("FLASK_PORT", 5000)),
-    "debug": os.getenv("FLASK_DEBUG", "True").lower() == "true",
-    "secret_key": os.getenv("SECRET_KEY", "waterborne-disease-secret-key"),
+    # Default to False for production safety; set FLASK_DEBUG=True locally
+    "debug": os.getenv("FLASK_DEBUG", "False").lower() == "true",
+    # No hardcoded fallback — must be set via environment variable in production
+    "secret_key": os.getenv("SECRET_KEY", "dev-only-insecure-key-change-me"),
 }
+
+# Guard: warn loudly if running in production without a proper secret key
+if not os.getenv("FLASK_DEBUG", "False").lower() == "true" and \
+   FLASK_CONFIG["secret_key"] == "dev-only-insecure-key-change-me":
+    import warnings
+    warnings.warn(
+        "WARNING: SECRET_KEY is not set via environment variable! "
+        "Set SECRET_KEY before deploying to production.",
+        stacklevel=2,
+    )
 
 # ---- Create directories on import ----
 for directory in [RAW_DATA_DIR, WEIGHTS_DIR, YOLO_DATASET_BASE, YOLO_CONFIG_DIR]:
